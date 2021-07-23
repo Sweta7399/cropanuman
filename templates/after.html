@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url("{{url_for('static', filename='image2.jpg')}}");  
+            }
+            h1{
+                color: red;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+            h2{
+                color:black;
+                margin-top: 50px;
+                font-size: 50px;
+            }
+            p{
+                margin-top: 150px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>PREDICTED!!!!!!!</h1>
+            {% if data == 0 %}
+            <h2>Adzuki Beans</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='AB.jpg')}}">
+            {% elif data == 1 %}
+            <h2>Black gram</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='BG.jpg')}}">
+            {% elif data == 2 %}
+            <h2>Chickpea</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='cp.jpg')}}">
+            {% elif data == 3 %}
+            <h2>Coconut</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='coconut.jpg')}}">
+            {% elif data == 4 %}
+            <h2>Coffee</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='coffee.jpg')}}">
+            {% elif data == 5 %}
+            <h2>Cotton</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='cotton.jpg')}}">
+            {% elif data == 6 %}
+            <h2>Ground Nut</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='gN.jpg')}}">
+            {% elif data == 7 %}
+            <h2>Jute</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='jute.jpg')}}">
+            {% elif data == 8 %}
+            <h2>Kidney Beans</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='KB.jpg')}}">
+            {% elif data == 9 %}
+            <h2>Lentil</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='lentils.jpg')}}">
+            {% elif data == 10 %}
+            <h2>Moth Beans</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='MB.jpg')}}">
+            {% elif data == 11 %}
+            <h2>Mung Bean</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='mung.jpg')}}">
+            {% elif data == 12 %}
+            <h2>Peas</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='pea.jpg')}}">
+            {% elif data == 13 %}
+            <h2>Pigeon Peas</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='pp.jpg')}}">
+            {% elif data == 14 %}
+            <h2>Rubber</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='rubber.jpg')}}">
+            {% elif data == 15 %}
+            <h2>Sugarcane</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='sc.jpeg')}}">
+            {% elif data == 16 %}
+            <h2>Tea</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='tea.jpg')}}">
+            {% elif data == 17 %}
+            <h2>Tobacco</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='tobacco.jpg')}}">
+            {% elif data == 18 %}
+            <h2>apple</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='apple.jpg')}}">
+            {% elif data == 19 %}
+            <h2>banana</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='banana.jpg')}}">
+            {% elif data == 20 %}
+            <h2>grapes</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='grape.jpg')}}">
+            {% elif data == 21 %}
+            <h2>Maize</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='Md.jpg')}}">
+           
+            {% elif data == 22 %}
+            <h2>Mango</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='mango.jpeg')}}">
+            {% elif data == 23 %}
+            <h2>Millet</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='millet.jpg')}}">
+            {% elif data == 24 %}
+            <h2>Muskmelon</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='mm.jpg')}}">
+            {% elif data == 25 %}
+            <h2>Orange</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='orange.jpg')}}">
+            {% elif data == 26 %}
+            <h2>Papaya</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='papaya.jpg')}}">
+            {% elif data == 27 %}
+            <h2>Pomegranate</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='pg.jpg')}}">
+            {% elif data == 28 %}
+            <h2>Rice</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='rice.jpg')}}">
+            {% elif data == 29 %}
+            <h2>Watermelon</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='waterm.jpg')}}">
+            {% elif data == 30 %}
+            <h2>Wheat</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='wheat.jpg')}}">
+            {% else %}
+            <h2>Data Insufficient!!!!!!!</h2>
+            <img height="300px" width="300px" src="{{url_for('static', filename='sorry.jpg')}}">          
+            {% endif %}
+            <p>
+            <a href="templates\home.html">go back to home page</a>
+                    </p>
+
+        </center>
+    </body>
+</html>
